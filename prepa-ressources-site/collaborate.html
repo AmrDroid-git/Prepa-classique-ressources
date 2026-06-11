@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Partager des ressources avec Prépa Classique Ressources." />
+  <title>Partager des ressources | Prépa Classique Ressources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="collaborate">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="index.html"><span class="brand-mark">PCR</span><span class="brand-text">Prépa Classique</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="folders.html" data-nav="folders">Dossiers</a>
+        <a href="files.html" data-nav="files">Fichiers</a>
+        <a href="websites.html" data-nav="websites">Sites web</a>
+        <a href="downloadAll.html" data-nav="downloadAll">Tout télécharger</a>
+        <a href="collaborate.html" data-nav="collaborate">Partager des ressources</a>
+        <a href="about.html" data-nav="about">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero section">
+      <div class="container narrow">
+        <p class="eyebrow">Contribution</p>
+        <h1>Partager une ressource</h1>
+        <p>
+          Tu peux proposer un Drive, un fichier, un site web ou toute autre ressource utile pour les étudiants de prépa.
+          Le partage se fait simplement avec un formulaire Google Forms.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="placeholder-card">
+          <span class="placeholder-icon">🤝</span>
+          <h2>Ajouter une ressource à la collection</h2>
+          <p>
+            Clique sur le bouton ci-dessous pour ouvrir le formulaire et envoyer ta contribution.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdYInTBl42CNuGkbIoPJYnw__hRnjZo4HWzVuHNbfZkcpS_DQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ouvrir le formulaire
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Prépa Classique Ressources.</p>
+      <p>Merci pour chaque contribution partagée avec la communauté.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/folders", "destination": "/folders.html" },
+    { "source": "/files", "destination": "/files.html" },
+    { "source": "/websites", "destination": "/websites.html" },
+    { "source": "/downloadAll", "destination": "/downloadAll.html" },
+    { "source": "/Collaborate", "destination": "/collaborate.html" },
+    { "source": "/collaborate", "destination": "/collaborate.html" },
+    { "source": "/about", "destination": "/about.html" }
+  ]
+}

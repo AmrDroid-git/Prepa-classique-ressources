@@ -1,0 +1,37 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/folders"
+  to = "/folders.html"
+  status = 200
+
+[[redirects]]
+  from = "/files"
+  to = "/files.html"
+  status = 200
+
+[[redirects]]
+  from = "/websites"
+  to = "/websites.html"
+  status = 200
+
+[[redirects]]
+  from = "/downloadAll"
+  to = "/downloadAll.html"
+  status = 200
+
+[[redirects]]
+  from = "/Collaborate"
+  to = "/collaborate.html"
+  status = 200
+
+[[redirects]]
+  from = "/collaborate"
+  to = "/collaborate.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200

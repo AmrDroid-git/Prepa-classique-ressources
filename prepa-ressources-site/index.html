@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prépa Classique Ressources : dossiers Drive, fichiers et sites utiles pour les étudiants en classes préparatoires." />
+  <title>Prépa Classique Ressources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Accueil Prépa Classique Ressources">
+        <span class="brand-mark">PCR</span>
+        <span class="brand-text">Prépa Classique</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="folders.html" data-nav="folders">Dossiers</a>
+        <a href="files.html" data-nav="files">Fichiers</a>
+        <a href="websites.html" data-nav="websites">Sites web</a>
+        <a href="downloadAll.html" data-nav="downloadAll">Tout télécharger</a>
+        <a href="collaborate.html" data-nav="collaborate">Partager des ressources</a>
+        <a href="about.html" data-nav="about">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Ressources CPGE • Prépa • Concours</p>
+          <h1>Une bibliothèque simple pour retrouver les ressources de prépa.</h1>
+          <p class="hero-text">
+            Dossiers Google Drive, fichiers et sites utiles sont regroupés dans un seul espace clair, rapide et facile à partager.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="folders.html">Explorer les ressources</a>
+            <a class="btn btn-secondary" href="websites.html">Voir les sites utiles</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Résumé des ressources">
+          <div class="hero-card-header">
+            <span>📚</span>
+            <strong>Base de ressources</strong>
+          </div>
+          <div class="stats-grid" id="homeStats">
+            <article class="stat-card skeleton"><span>—</span><p>Dossiers</p></article>
+            <article class="stat-card skeleton"><span>—</span><p>Fichiers</p></article>
+            <article class="stat-card skeleton"><span>—</span><p>Sites</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Navigation rapide</p>
+          <h2>Choisir une catégorie</h2>
+          <p>Chaque page charge les données depuis un fichier JSON local. Aucun backend n’est nécessaire.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="folders.html">
+            <span class="category-icon">🗂️</span>
+            <h3>Dossiers Drive</h3>
+            <p>Des collections complètes avec nom, propriétaire, description et lien d’accès.</p>
+          </a>
+          <a class="category-card" href="files.html">
+            <span class="category-icon">📄</span>
+            <h3>Fichiers</h3>
+            <p>Des documents, PDF et archives utiles sans affichage du propriétaire.</p>
+          </a>
+          <a class="category-card" href="websites.html">
+            <span class="category-icon">🌐</span>
+            <h3>Sites web</h3>
+            <p>Des plateformes, blogs et bibliothèques externes pour travailler plus vite.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Prépa Classique Ressources.</p>
+      <p>Site statique prêt pour GitHub Pages, Vercel et Netlify.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

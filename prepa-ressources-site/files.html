@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Liste des fichiers Google Drive de Prépa Classique Ressources." />
+  <title>Fichiers | Prépa Classique Ressources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="files">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="index.html"><span class="brand-mark">PCR</span><span class="brand-text">Prépa Classique</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="folders.html" data-nav="folders">Dossiers</a>
+        <a href="files.html" data-nav="files">Fichiers</a>
+        <a href="websites.html" data-nav="websites">Sites web</a>
+        <a href="downloadAll.html" data-nav="downloadAll">Tout télécharger</a>
+        <a href="collaborate.html" data-nav="collaborate">Partager des ressources</a>
+        <a href="about.html" data-nav="about">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero section">
+      <div class="container">
+        <p class="eyebrow">Fichiers Google Drive</p>
+        <h1>Fichiers et documents</h1>
+        <p>Les fichiers sont affichés sans propriétaire, avec une description et un bouton vers le document.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="toolbar">
+          <label class="search-box" for="resourceSearch">
+            <span>🔎</span>
+            <input id="resourceSearch" type="search" placeholder="Rechercher un fichier, une matière, un concours..." autocomplete="off" />
+          </label>
+          <p class="result-count" id="resultCount">Chargement...</p>
+        </div>
+        <div class="resources-grid" id="resourcesGrid"></div>
+        <p class="empty-state hidden" id="emptyState">Aucune ressource trouvée.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Prépa Classique Ressources.</p>
+      <p>Données chargées depuis <code>data/files.json</code>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

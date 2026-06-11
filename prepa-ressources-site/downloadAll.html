@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Télécharger toutes les données de Prépa Classique Ressources." />
+  <title>Tout télécharger | Prépa Classique Ressources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="downloadAll">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="index.html"><span class="brand-mark">PCR</span><span class="brand-text">Prépa Classique</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="folders.html" data-nav="folders">Dossiers</a>
+        <a href="files.html" data-nav="files">Fichiers</a>
+        <a href="websites.html" data-nav="websites">Sites web</a>
+        <a href="downloadAll.html" data-nav="downloadAll">Tout télécharger</a>
+        <a href="collaborate.html" data-nav="collaborate">Partager des ressources</a>
+        <a href="about.html" data-nav="about">À propos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero section">
+      <div class="container narrow">
+        <p class="eyebrow">Export des données</p>
+        <h1>Tout télécharger</h1>
+        <p>
+          Télécharge toutes les ressources du site dans un seul fichier.
+          Les données sont générées directement dans le navigateur à partir des fichiers JSON locaux.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="download-list two-actions">
+          <button class="download-card download-button" type="button" id="downloadJsonBtn">
+            <span>📦</span>
+            <div>
+              <h2>Télécharger toutes les données en JSON</h2>
+              <p>Un seul fichier <code>prepa-classique-ressources.json</code> avec dossiers, fichiers et sites web.</p>
+            </div>
+          </button>
+
+          <button class="download-card download-button" type="button" id="downloadTxtBtn">
+            <span>📝</span>
+            <div>
+              <h2>Télécharger toutes les données en TXT</h2>
+              <p>Un seul fichier <code>prepa-classique-ressources.txt</code> lisible facilement.</p>
+            </div>
+          </button>
+        </div>
+
+        <p class="empty-state hidden" id="downloadMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Prépa Classique Ressources.</p>
+      <p>Fonctionnement 100% statique.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
