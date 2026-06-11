@@ -1,0 +1,11 @@
+from those files I want from those json files a website (css, html , js) containing home screen with nav bar at the top (The website in french please) /folders /files /websites /downloadAll /Collaborate /about .
+for now the website just contain the home page and the folders and files and websites pages.
+we need index.html, folders.html files.html websites.html about.html ...ect
+because I told you I will put it in the free version of github deployment and vercel and netlify so no backend just js.
+now in the navbar the share reousrces and about buttons do not work yes just clickable.
+please give me the html css and js files containing the links and websites.
+for the folders json file, I want each object to be presented in a component in the page containing the name of the drive, the owner, the description, and a button to take you to the download page in drive.
+for the files json, just remove the owner because we dont have it.
+for the websites, same thing like files, but when clicking the button it takes us to the website.
+
+I want to deploy the work in vercel and netlify and github to share it to people, so I want a clean work please.
