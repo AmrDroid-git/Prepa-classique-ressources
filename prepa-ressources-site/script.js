@@ -292,6 +292,34 @@ const setupDownloadAllPage = () => {
   });
 };
 
+async function loadLastModificationDate() {
+  const dateElement = document.getElementById("last-modif-date");
+
+  if (!dateElement) return;
+
+  try {
+    const response = await fetch("data/last_modif_date/last_modif_date.json", {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error("Cannot load last modification date");
+    }
+
+    const data = await response.json();
+
+    dateElement.textContent = `Last modif: ${data.lastModificationDate}`;
+  } catch (error) {
+    dateElement.textContent = "Last modif: unavailable";
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadLastModificationDate);
+} else {
+  loadLastModificationDate();
+}
+
 setActiveNav();
 setupMobileNav();
 setYear();

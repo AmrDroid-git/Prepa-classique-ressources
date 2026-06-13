@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +8,15 @@
   <title>Dossiers Drive | Prépa Classique Ressources</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body data-page="folders">
   <header class="site-header">
     <nav class="navbar container" aria-label="Navigation principale">
-      <a class="brand" href="index.html"><span class="brand-mark">PCR</span><span class="brand-text">Prépa Classique</span></a>
+      <a class="brand" href="index.html"><span class="brand-mark">PCR</span><span class="brand-text">Prépa
+          Classique</span></a>
+      <span id="last-modif-date" class="last-modif-date">
+        Last modif: ...
+      </span>
       <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
       <div class="nav-links" id="navLinks">
         <a href="index.html" data-nav="home">Accueil</a>
@@ -29,7 +35,8 @@
       <div class="container">
         <p class="eyebrow">Dossiers Google Drive</p>
         <h1>Dossiers de ressources</h1>
-        <p>Chaque dossier est présenté avec son nom, son propriétaire, une description et un bouton vers Google Drive.</p>
+        <p>Chaque dossier est présenté avec son nom, son propriétaire, une description et un bouton vers Google Drive.
+        </p>
       </div>
     </section>
 
@@ -38,7 +45,8 @@
         <div class="toolbar">
           <label class="search-box" for="resourceSearch">
             <span>🔎</span>
-            <input id="resourceSearch" type="search" placeholder="Rechercher un dossier, une matière, un propriétaire..." autocomplete="off" />
+            <input id="resourceSearch" type="search"
+              placeholder="Rechercher un dossier, une matière, un propriétaire..." autocomplete="off" />
           </label>
           <p class="result-count" id="resultCount">Chargement...</p>
         </div>
@@ -57,4 +65,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

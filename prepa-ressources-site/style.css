@@ -561,6 +561,7 @@ code {
 }
 
 @media (max-width: 960px) {
+
   .hero-grid,
   .category-grid,
   .resources-grid {
@@ -651,4 +652,45 @@ code {
 
 .two-actions {
   grid-template-columns: 1fr;
+}
+
+
+.site-header {
+  position: relative;
+}
+
+.last-modif-date {
+  position: absolute;
+  top: 6px;
+  left: 18px;
+  z-index: 10;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  opacity: 0.75;
+  white-space: nowrap;
+
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(120, 120, 120, 0.22);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.navbar {
+  padding-top: 26px;
+}
+
+@media (max-width: 768px) {
+  .last-modif-date {
+    position: static;
+    display: block;
+    width: fit-content;
+    margin: 0.5rem auto 0;
+    text-align: center;
+  }
+
+  .navbar {
+    padding-top: 0;
+  }
 }
